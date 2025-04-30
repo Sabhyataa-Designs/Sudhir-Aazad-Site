@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>डॉ. सुधीर आज़ाद</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
+      color: #222;
+    }
+    header {
+      background: #003366;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      background: #eeeeee;
+      padding: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #003366;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+    }
+    footer {
+      background: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    .book-list li, .film-list li, .award-list li, .blog-list li {
+      margin-bottom: 0.5rem;
+    }
+    a.book-link, a.film-link, a.social-link {
+      color: #003366;
+      text-decoration: underline;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      gap: 0.5rem;
+    }
+    form input, form textarea, form button {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    @media (max-width: 600px) {
+      header, section, footer {
+        padding: 1rem;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>डॉ. सुधीर आज़ाद</h1>
+    <p>कवि | लेखक | फ़िल्मकार</p>
+  </header>
+  <nav>
+    <a href="#about">परिचय</a>
+    <a href="#books">पुस्तकें</a>
+    <a href="#films">फ़िल्में</a>
+    <a href="#awards">पुरस्कार</a>
+    <a href="#blog">ब्लॉग</a>
+    <a href="#contact">संपर्क</a>
+  </nav>
+
+  <section id="about">
+    <h2>परिचय</h2>
+    <p>डॉ. सुधीर आज़ाद ने नेताजी सुभाषचंद्र बोस पर प्रबंधकाव्य पर पीएचडी की है। आप कवि, लेखक और फ़िल्मकार हैं जो राष्ट्रबोध, पर्यावरण, और प्रेम जैसे विषयों पर सशक्त लेखन करते हैं।</p>
+  </section>
+
+  <section id="books">
+    <h2>पुस्तकें</h2>
+    <ul class="book-list">
+      <li><a href="#" class="book-link">‘क्रांतिसिंह: नेताजी सुभाषचंद्र बोस’ (2023)</a></li>
+      <li><a href="#" class="book-link">‘मैं भारत हूँ’ – बाल कविताओं का संग्रह (2022)</a></li>
+      <li><a href="#" class="book-link">‘नदी, मैं तुम्हें रुकने नहीं दूँगा’ – पर्यावरण पर कविताएं (2022)</a></li>
+      <li><a href="#" class="book-link">‘भोपाल... सिर बस सुबह तक’ – उपन्यास (2016)</a></li>
+      <li><a href="#" class="book-link">‘नमक’ – मज़दूर संघर्ष पर आधारित उपन्यास (2025)</a></li>
+    </ul>
+  </section>
+
+  <section id="films">
+    <h2>फ़िल्में</h2>
+    <ul class="film-list">
+      <li><a href="#" class="film-link">क्रांतिस्वर (डॉक्युमेंट्री)</a></li>
+      <li><a href="#" class="film-link">गाँव की नदी (शॉर्ट फिल्म)</a></li>
+      <li><a href="#" class="film-link">शहीदों की गाथा (फ़ीचर फिल्म)</a></li>
+    </ul>
+    <p>अधिकांश फ़िल्में सामाजिक व ऐतिहासिक विषयों पर आधारित हैं।</p>
+  </section>
+
+  <section id="awards">
+    <h2>पुरस्कार</h2>
+    <ul class="award-list">
+      <li>मप्र साहित्य अकादमी सम्मान (2019)</li>
+      <li>पोएट ऑफ द ईयर – कोलकाता लिटरेरी कार्निवल (2023)</li>
+      <li>जयपुर बाल साहित्य सम्मान (2022–23)</li>
+    </ul>
+  </section>
+
+  <section id="blog">
+    <h2>ब्लॉग</h2>
+    <ul class="blog-list">
+      <li><a href="#" class="book-link">भारतीय स्वतंत्रता संग्राम और साहित्य की भूमिका</a></li>
+      <li><a href="#" class="book-link">नदी, जंगल और कविता</a></li>
+      <li><a href="#" class="book-link">बाल साहित्य में राष्ट्रबोध की आवश्यकता</a></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>संपर्क</h2>
+    <p>ईमेल: <a href="mailto:sudhiraazad@yahoo.in">sudhiraazad@yahoo.in</a></p>
+    <form action="mailto:sudhiraazad@yahoo.in" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="आपका नाम" required />
+      <input type="email" name="email" placeholder="आपका ईमेल" required />
+      <textarea name="message" rows="5" placeholder="संदेश लिखें..."></textarea>
+      <button type="submit">भेजें</button>
+    </form>
+    <h3>सोशल मीडिया</h3>
+    <p>
+      <a href="#" class="social-link">Facebook</a> |
+      <a href="#" class="social-link">Twitter</a> |
+      <a href="#" class="social-link">Instagram</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 डॉ. सुधीर आज़ाद. सर्वाधिकार सुरक्षित।</p>
+  </footer>
+</body>
+</html>
